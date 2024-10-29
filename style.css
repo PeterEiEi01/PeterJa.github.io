@@ -1,44 +1,96 @@
-/* styles.css */
-
-/* ตั้งค่าพื้นหลังของ carousel */
-.carousel-item {
-    height: 400px; /* ความสูงของแบนเนอร์ */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-.carousel-item img {
-    height: 100%; /* ให้ภาพเต็มความสูง */
-    object-fit: cover; /* ปรับการแสดงผลภาพ */
+/* Header */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* ตั้งค่าความสูงของ hero section */
-.hero {
-    height: 400px; 
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
 }
 
-/* ปรับแต่ง text ของ navbar */
-.navbar {
-    background-color: #343a40; /* สีพื้นหลังของ navbar */
+/* Product Details */
+.product-details {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.navbar .nav-link {
-    color: #ffffff; /* สีของลิงก์ */
+.product {
+    text-align: center;
 }
 
-.navbar .nav-link:hover {
-    color: #f8f9fa; /* สีเมื่อ hover */
+.img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-/* ปรับแต่ง footer */
-footer {
-    background-color: #343a40; /* สีพื้นหลังของ footer */
-    color: #ffffff; /* สีของข้อความใน footer */
+h5 {
+    margin-top: 15px;
+    color: #007bff;
 }
 
-/* ปรับแต่ง button */
+p {
+    color: #666;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
 .btn-primary {
-    background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* สีเมื่อ hover */
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #003f7f;
+}
+
+/* Toast Notification */
+.toast-body {
+    font-size: 14px;
+    font-weight: bold;
 }
